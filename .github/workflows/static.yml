@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Muelita Bot – The Good Dentist</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+    <style>
+      body { margin: 0; font-family: Arial, sans-serif; }
+    </style>
+  </head>
+
+  <body>
+    <script type="module">
+      import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+      createChat({
+        webhookUrl: 'https://iakevin92.app.n8n.cloud/webhook/5b2e4759-783a-44e3-bfe0-d96ff123f94b/chat',
+        mode: 'fullscreen',
+        defaultLanguage: 'es',
+        showWelcomeScreen: true,
+        i18n: {
+          es: {
+            title: 'Muelita Bot 🦷',
+            subtitle: 'The Good Dentist — Agenda e información',
+            getStarted: 'Nueva conversación',
+            inputPlaceholder: 'Escribe tu mensaje…',
+          },
+        },
+        initialMessages: [
+          '¡Hola! Soy Muelita Bot 🦷',
+          '¿Deseas agendar una cita o consultar servicios/productos?',
+        ],
+      });
+    </script>
+  </body>
+</html>
